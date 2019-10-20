@@ -20,11 +20,11 @@ This allowed each quadrant to be its own, seperate part to prevent rendering iss
 
 ### Preset Equations
 
-        | Function Name | Equation |
-        | --- | --- |
-        | x=y plane | z = x+y |
-        | cone | z = sqrt(x^2+y^2)|
-        |Hyperboloid one sheet | z = sqrt( ((x^2)/( a^2)) + ((y^2)/( b^2)) - -1|
-        |saddle | z= x^2-y^2 |
-        |wave | x^3 + sqrt(y) |
-        |dome | -x^2-y^2 |
+| Function Name | Equation |
+| --- | --- |
+| x=y plane | z = x+y |
+| cone | z = sqrt(x^2+y^2)|
+|Hyperboloid one sheet | z = sqrt( ((x^2)/( a^2)) + ((y^2)/( b^2)) - -1|
+|saddle | z= x^2-y^2 |
+|wave | x^3 + sqrt(y) |
+|dome | -x^2-y^2 |
