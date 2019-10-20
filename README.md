@@ -19,7 +19,7 @@ There were many issues that we ran into while developing the grapher. First, the
 This allowed each quadrant to be its own, seperate part to prevent rendering issues as well as fixing the issues of drawing in quadrants where the function does not exist. The second issue we ran into was that the library we used to convert a string of a math function into an evaluable function, was very slow. This makes the user have to wait a long time for the graph to be calculated. We were unable to fix this issue, but for demoing purposes we decided to create preset functions that would bypass the math parser library and generate the graph fast.
 
 ### Preset Equations
-<p align="center">
+
         | Function Name | Equation |
         | --- | --- |
         | x=y plane | z = x+y |
@@ -28,4 +28,3 @@ This allowed each quadrant to be its own, seperate part to prevent rendering iss
         |saddle | z= x^2-y^2 |
         |wave | x^3 + sqrt(y) |
         |dome | -x^2-y^2 |
-</p>
