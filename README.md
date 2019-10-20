@@ -8,11 +8,10 @@ In order to make the grapher more robust, we needed a way to enter custom functi
 ### Problems
 There were many issues that we ran into while developing the grapher. First, the graph is unable to calculate implicit functions as the mesh would be rendered incorrectly. With more time, we may be able to determine the best ways to connect our vertices to create triangles and render them. Our work around for this hack was to separate the mesh into 8 different quadrants such as
 
-```
-(+x,+y,+z),(-x,+y,+z),(+x,-y,+z),(-x,+-y,+z),
-(+x,+y,-z),(-x,+y,-z),(+x,-y,-z),(-x,+-y,-z)
-```
-
+<p align="center">
+        (+x,+y,+z),(-x,+y,+z),(+x,-y,+z),(-x,+-y,+z),
+        (+x,+y,-z),(-x,+y,-z),(+x,-y,-z),(-x,+-y,-z)
+</p>
 <p align="center">
   <img width="300" height="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Octant_numbers.svg/220px-Octant_numbers.svg.png">
 </p>
@@ -20,12 +19,13 @@ There were many issues that we ran into while developing the grapher. First, the
 This allowed each quadrant to be its own, seperate part to prevent rendering issues as well as fixing the issues of drawing in quadrants where the function does not exist. The second issue we ran into was that the library we used to convert a string of a math function into an evaluable function, was very slow. This makes the user have to wait a long time for the graph to be calculated. We were unable to fix this issue, but for demoing purposes we decided to create preset functions that would bypass the math parser library and generate the graph fast.
 
 ### Preset Equations
-
-| Function Name | Equation |
-| --- | --- |
-| x=y plane | z = x+y |
-| cone | z = sqrt(x^2+y^2)|
-|Hyperboloid one sheet | z = sqrt( ((x^2)/( a^2)) + ((y^2)/( b^2)) - -1|
-|saddle | z= x^2-y^2 |
-|wave | x^3 + sqrt(y) |
-|dome | -x^2-y^2 |
+<p align="center">
+        | Function Name | Equation |
+        | --- | --- |
+        | x=y plane | z = x+y |
+        | cone | z = sqrt(x^2+y^2)|
+        |Hyperboloid one sheet | z = sqrt( ((x^2)/( a^2)) + ((y^2)/( b^2)) - -1|
+        |saddle | z= x^2-y^2 |
+        |wave | x^3 + sqrt(y) |
+        |dome | -x^2-y^2 |
+</p>
