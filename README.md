@@ -13,7 +13,9 @@ There were many issues that we ran into while developing the grapher. First, the
 (+x,+y,-z),(-x,+y,-z),(+x,-y,-z),(-x,+-y,-z)
 ```
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Octant_numbers.svg/220px-Octant_numbers.svg.png)
+<p align="center">
+  ![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Octant_numbers.svg/220px-Octant_numbers.svg.png)
+</p>
 
 This allowed each quadrant to be its own, seperate part to prevent rendering issues as well as fixing the issues of drawing in quadrants where the function does not exist. The second issue we ran into was that the library we used to convert a string of a math function into an evaluable function, was very slow. This makes the user have to wait a long time for the graph to be calculated. We were unable to fix this issue, but for demoing purposes we decided to create preset functions that would bypass the math parser library and generate the graph fast.
 
