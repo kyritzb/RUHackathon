@@ -1,4 +1,4 @@
-## Graph Generator
+## Graph Generator (Bryan)
 ### Drawing the graph
 The graph generator is an object that builds a three dimensional mesh from a multivariable calculus function. In order to create the mesh, we needed to derive vertices of points in the 3d space. We did this by performing the math formulas and getting a z for each point from -20 to 20 x and y. Once we got an array of vertices we needed to then draw the surface of this graph by connecting vertices with triangles and connecting them together. When all of these small triangles are woven together, a 3d mesh of the graph of the function is created. 
 
